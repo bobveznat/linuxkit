@@ -44,8 +44,8 @@ trust:
   image:
     - linuxkit/kernel
 files:
-  - path: root/.ssh/authorized_keys
-    contents: '#your ssh key here'
+  - path: /root/.ssh/authorized_keys
+    contents: '#your ssh public key here'
 outputs:
   - format: kernel+initrd
   - format: iso-bios
